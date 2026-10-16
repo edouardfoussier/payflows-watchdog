@@ -6,7 +6,7 @@
 - **Payflows**, plateforme française de procure-to-pay (demandes d'achat, bons de commande, factures, circuits de validation), via un bac à sable et ses connecteurs MCP ;
 - **Anthropic** : Claude, Claude Code et des crédits API.
 
-**Team 11 :** Serge Da Silva (Ledger), Margot Scampini, Dany Srage (Defacto) et Edouard Foussier, avec le soutien d'Augustin (Payflows).
+**Team 11 :** Serge Da Silva (Ledger), Margot Scampini (Alma), Dany Srage (Defacto) et Edouard Foussier, avec le soutien d'Augustin (Payflows).
 
 > Toutes les données présentées ici sont **fictives** : bac à sable de démonstration (entreprise « Halden SAS », fournisseurs et personas inventés) et dataset anonymisé fourni par les organisateurs. Ce dataset n'est pas inclus dans ce repo.
 
