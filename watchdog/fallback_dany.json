@@ -1,0 +1,16 @@
+{
+  "emoji": "🧾",
+  "title": "Facture sans bon de commande : ta PO est prête",
+  "text": "Dany, ta facture *PF-2026-0042* a été soumise sans purchase order. J'ai préparé la PO en brouillon à partir de la facture (fournisseur, montant, TVA 20 %, période, centre de coût ENG › IT). Il te reste à vérifier et soumettre.",
+  "fields": {
+    "Fournisseur": "Payflows",
+    "Montant HT": "2 195,00 € (TVA 20 %)",
+    "Objet": "Abonnement Growth + sièges + onboarding (oct. 2026)",
+    "Échéance": "14/11/2026"
+  },
+  "buttons": [
+    {"text": "Vérifier et soumettre ta PO", "url": "https://app.payflows.io/form-requester?id=1035722", "style": "primary"},
+    {"text": "Voir la facture", "url": "https://app.payflows.io/invoices/1035720"}
+  ],
+  "footer": "Payflows Watchdog · live Team 11"
+}

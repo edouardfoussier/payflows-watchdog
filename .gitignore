@@ -1,0 +1,10 @@
+# Secrets (URL du webhook Slack)
+.env
+**/.env
+
+# Dataset fourni par les organisateurs : ne pas redistribuer sans leur accord
+finance-ai-lab-dataset-teams/
+
+# Fichiers locaux
+.DS_Store
+.claude/

@@ -1,0 +1,57 @@
+[
+  {
+    "rule": "invoice_without_po",
+    "audience": "requester",
+    "emoji": "🧾",
+    "title": "Facture sans bon de commande : ta PO est prête",
+    "text": "Joseph, ta facture *ALT-2026-1009* a été soumise le 14/10 *sans purchase order*. J'ai préparé la PO en brouillon à partir de la facture (fournisseur, montant, TVA, période, centre de coût ENG › IT). Il te reste à vérifier et soumettre.",
+    "fields": {
+      "Fournisseur": "Altiplano Software",
+      "Montant": "4 800,00 € HT",
+      "Objet": "Annual support renewal",
+      "Échéance": "08/11/2026"
+    },
+    "buttons": [
+      {"text": "Vérifier et soumettre ta PO", "url": "https://app.payflows.io/form-requester?id=1035671", "style": "primary"},
+      {"text": "Voir la facture", "url": "https://app.payflows.io/invoices/1033413"}
+    ],
+    "footer": "Payflows Watchdog · règle « facture sans PO » · Team 11"
+  },
+  {
+    "rule": "approval_overdue",
+    "audience": "approver",
+    "emoji": "⏰",
+    "title": "3 factures attendent ta validation depuis le 13/10",
+    "text": "Sofia, ces factures sont bloquées à l'étape *Accounts payable* depuis plus de 48 h. Selon les montants, Markus (Controller) puis Claire (CFO) valident après toi.",
+    "fields": {
+      "BRI-2026-0225": "Brisant Labs · 89 850 € HT",
+      "TAV-2026-0229": "Tavira Studio · 50 510 € HT",
+      "RAV-2026-0095": "Ravel Media · 1 450 € HT",
+      "Total en attente": "141 810 € HT"
+    },
+    "buttons": [
+      {"text": "Ouvrir BRI-2026-0225", "url": "https://app.payflows.io/invoices/1029269", "style": "primary"},
+      {"text": "Ouvrir TAV-2026-0229", "url": "https://app.payflows.io/invoices/1029268"},
+      {"text": "Ouvrir RAV-2026-0095", "url": "https://app.payflows.io/invoices/1029271"}
+    ],
+    "footer": "Payflows Watchdog · règle « validation en retard > 24 h » · Team 11"
+  },
+  {
+    "rule": "duplicate_paid_twice",
+    "audience": "ap",
+    "emoji": "🚨",
+    "title": "Doublon marqué payé deux fois : Rivena Advisory",
+    "text": "La facture *RIV-2026-0051* (27 536,60 € TTC) est au statut payé *deux fois* : #1028910 et #1029223. Même commande PAYF-1027434, même IBAN, seules les dates changent. Payflows l'avait signalée comme doublon, mais elle est passée par le formulaire « Invoice without approval », sans aucun valideur.\n👉 Bloque RIV-2026-0125 (11 519,20 €, échéance 25/10) pour compenser, et demande à Rivena un avoir pour le solde (16 017,40 € TTC).",
+    "fields": {
+      "Fournisseur": "Rivena Advisory",
+      "Montant en double": "27 536,60 € TTC",
+      "Commande": "PAYF-1027434 (facturée à 200 %)",
+      "À bloquer": "RIV-2026-0125 · 11 519,20 €"
+    },
+    "buttons": [
+      {"text": "Bloquer RIV-2026-0125", "url": "https://app.payflows.io/invoices/1028911", "style": "danger"},
+      {"text": "Voir le doublon", "url": "https://app.payflows.io/invoices/1029223"}
+    ],
+    "footer": "Payflows Watchdog · règle « doublon » · Team 11"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "emoji": "🧾",
+  "title": "Facture sans bon de commande",
+  "text": "Ta facture *KES-2026-0312* (Kestrel Events) vient d'arriver dans Payflows *sans purchase order*. Sans PO, elle ne peut être ni rapprochée ni imputée au budget, et elle bloque le circuit de validation.",
+  "fields": {
+    "Fournisseur": "Kestrel Events",
+    "Montant HT": "6 900,00 € (TVA 20 %)",
+    "Objet": "Séminaire équipe Q4 – Lyon",
+    "Échéance": "14/11/2026"
+  },
+  "buttons": [
+    {"text": "Créer ta purchase order", "url": "https://app.payflows.io/purchase-orders", "style": "primary"},
+    {"text": "Voir les factures", "url": "https://app.payflows.io/invoices"}
+  ],
+  "footer": "Payflows Watchdog · live Team 11"
+}
